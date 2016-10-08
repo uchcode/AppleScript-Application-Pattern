@@ -37,7 +37,7 @@ script AppDelegate
     end
     
     on applicationDidFinishLaunching:notification
-        -- Insert code here to initialize your application
+        display alert "Launch"
     end
     
     on applicationWillTerminate:sender
