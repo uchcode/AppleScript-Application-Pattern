@@ -1,0 +1,307 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E299B0D41DA9782F00F084E0 /* AppleScriptObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E299B0D31DA9782F00F084E0 /* AppleScriptObjC.framework */; };
+		E299B0D81DA9782F00F084E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E299B0D71DA9782F00F084E0 /* main.m */; };
+		E299B0DA1DA9782F00F084E0 /* AppDelegate.applescript in Sources */ = {isa = PBXBuildFile; fileRef = E299B0D91DA9782F00F084E0 /* AppDelegate.applescript */; };
+		E299B0DC1DA9782F00F084E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E299B0DB1DA9782F00F084E0 /* Assets.xcassets */; };
+		E299B0DF1DA9782F00F084E0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E299B0DD1DA9782F00F084E0 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E299B0D01DA9782F00F084E0 /* ASOC DockMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ASOC DockMenu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E299B0D31DA9782F00F084E0 /* AppleScriptObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptObjC.framework; path = System/Library/Frameworks/AppleScriptObjC.framework; sourceTree = SDKROOT; };
+		E299B0D71DA9782F00F084E0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E299B0D91DA9782F00F084E0 /* AppDelegate.applescript */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.applescript; path = AppDelegate.applescript; sourceTree = "<group>"; };
+		E299B0DB1DA9782F00F084E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E299B0DE1DA9782F00F084E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		E299B0E01DA9782F00F084E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E299B0CD1DA9782F00F084E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E299B0D41DA9782F00F084E0 /* AppleScriptObjC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E299B0C71DA9782F00F084E0 = {
+			isa = PBXGroup;
+			children = (
+				E299B0D51DA9782F00F084E0 /* ASOC DockMenu */,
+				E299B0D21DA9782F00F084E0 /* Frameworks */,
+				E299B0D11DA9782F00F084E0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E299B0D11DA9782F00F084E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E299B0D01DA9782F00F084E0 /* ASOC DockMenu.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E299B0D21DA9782F00F084E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E299B0D31DA9782F00F084E0 /* AppleScriptObjC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E299B0D51DA9782F00F084E0 /* ASOC DockMenu */ = {
+			isa = PBXGroup;
+			children = (
+				E299B0D91DA9782F00F084E0 /* AppDelegate.applescript */,
+				E299B0DB1DA9782F00F084E0 /* Assets.xcassets */,
+				E299B0DD1DA9782F00F084E0 /* MainMenu.xib */,
+				E299B0E01DA9782F00F084E0 /* Info.plist */,
+				E299B0D61DA9782F00F084E0 /* Supporting Files */,
+			);
+			path = "ASOC DockMenu";
+			sourceTree = "<group>";
+		};
+		E299B0D61DA9782F00F084E0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E299B0D71DA9782F00F084E0 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E299B0CF1DA9782F00F084E0 /* ASOC DockMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E299B0E31DA9782F00F084E0 /* Build configuration list for PBXNativeTarget "ASOC DockMenu" */;
+			buildPhases = (
+				E299B0CC1DA9782F00F084E0 /* Sources */,
+				E299B0CD1DA9782F00F084E0 /* Frameworks */,
+				E299B0CE1DA9782F00F084E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ASOC DockMenu";
+			productName = "ASOC DockMenu";
+			productReference = E299B0D01DA9782F00F084E0 /* ASOC DockMenu.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E299B0C81DA9782F00F084E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = uchcode;
+				TargetAttributes = {
+					E299B0CF1DA9782F00F084E0 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E299B0CB1DA9782F00F084E0 /* Build configuration list for PBXProject "ASOC DockMenu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E299B0C71DA9782F00F084E0;
+			productRefGroup = E299B0D11DA9782F00F084E0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E299B0CF1DA9782F00F084E0 /* ASOC DockMenu */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E299B0CE1DA9782F00F084E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E299B0DC1DA9782F00F084E0 /* Assets.xcassets in Resources */,
+				E299B0DF1DA9782F00F084E0 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E299B0CC1DA9782F00F084E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E299B0DA1DA9782F00F084E0 /* AppDelegate.applescript in Sources */,
+				E299B0D81DA9782F00F084E0 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E299B0DD1DA9782F00F084E0 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E299B0DE1DA9782F00F084E0 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E299B0E11DA9782F00F084E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E299B0E21DA9782F00F084E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E299B0E41DA9782F00F084E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "ASOC DockMenu/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.uchcode.ASOC-DockMenu";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E299B0E51DA9782F00F084E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "ASOC DockMenu/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.uchcode.ASOC-DockMenu";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E299B0CB1DA9782F00F084E0 /* Build configuration list for PBXProject "ASOC DockMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E299B0E11DA9782F00F084E0 /* Debug */,
+				E299B0E21DA9782F00F084E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E299B0E31DA9782F00F084E0 /* Build configuration list for PBXNativeTarget "ASOC DockMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E299B0E41DA9782F00F084E0 /* Debug */,
+				E299B0E51DA9782F00F084E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E299B0C81DA9782F00F084E0 /* Project object */;
+}
