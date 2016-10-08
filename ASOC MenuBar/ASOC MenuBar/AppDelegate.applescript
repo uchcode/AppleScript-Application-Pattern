@@ -13,7 +13,6 @@ script AppDelegate
     -- IBOutlets
     
     property theWindow : missing value
-    property theStatusItem : missing value
     property theStatusMenu : missing value
     
     -- IBActions
@@ -32,7 +31,11 @@ script AppDelegate
         activate
         tell theWindow to makeKeyAndOrderFront_(me)
     end
-
+    
+    -- Properties of me
+    
+    property theStatusItem : missing value
+    
     -- Delegate methods
     
     on applicationWillFinishLaunching:notification
