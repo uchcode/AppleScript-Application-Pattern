@@ -20,7 +20,7 @@ script AppDelegate
     -- IBActions
     
     on ok:sender
-        quit
+        current application's NSApp's terminate_(me)
     end
     
     -- Delegate methods
@@ -29,26 +29,25 @@ script AppDelegate
         
         set theAddress to "http://book.mynavi.jp/wd/widget/300x250.html"
         
-        set c to WKWebViewConfiguration's alloc's init()
         set z to current application's NSMakeRect(0, 0, 0, 0)
+        set c to WKWebViewConfiguration's alloc's init()
         set theWebView to WKWebView's alloc's initWithFrame_configuration_(z, c)
         
         set s to theWindow's contentView's frame()'s |size|
         set w to width of s
         set h to height of s
         set f to current application's NSMakeRect(0, 64, w, h - 64)
-        
         tell theWebView to setFrame_(f)
         
         set u to NSURL's alloc's initWithString_(theAddress)
         set r to NSURLRequest's alloc's initWithURL_(u)
-        
         tell theWebView to loadRequest_(r)
+        
         tell the contentView of theWindow to addSubview_(theWebView)
         
         tell theWindow to |center|()
-        tell theWindow to setLevel_(current application's NSFloatingWindowLevel)
         activate
+        current application's NSApp's runModalForWindow:theWindow
     end
     
     on applicationDidFinishLaunching:notification

@@ -20,7 +20,7 @@ script AppDelegate
     -- IBActions
     
     on ok:sender
-        quit
+        current application's NSApp's terminate_(me)
     end
     
     -- Delegate methods
@@ -45,9 +45,9 @@ script AppDelegate
         
         tell the contentView of theWindow to addSubview_(theWebView)
         
-        tell theWindow to setLevel_(current application's NSFloatingWindowLevel)
         tell theWindow to |center|()
         activate
+        current application's NSApp's runModalForWindow:theWindow
     end
     
     on applicationDidFinishLaunching:notification

@@ -17,15 +17,15 @@ script AppDelegate
     
     on ok:sender
         display alert "OK"
-        quit
+        current application's NSApp's terminate_(me)
     end
     
     -- Delegate methods
     
     on applicationWillFinishLaunching:notification
         tell theWindow to |center|()
-        tell theWindow to setLevel_(current application's NSFloatingWindowLevel)
         activate
+        current application's NSApp's runModalForWindow:theWindow
     end
     
     on applicationDidFinishLaunching:notification
