@@ -27,7 +27,7 @@ script AppDelegate
         -- Insert code here to initialize your application
     end
     
-    on applicationWillTerminate:sender
+    on applicationWillTerminate:notification
         -- Insert code here to tear down your application
     end
     

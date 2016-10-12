@@ -15,38 +15,44 @@ script AppDelegate
     
     -- IBActions
     
-    on ok:sender
-        activate
-        display alert "OK"
+    on command1:sender
+        -- Insert code here
     end
     
-    on cancel:sender
-        activate
-        display alert "Cancel"
+    on command2:sender
+        -- Insert code here
     end
     
     -- Delegate methods
-    
-    on applicationShouldHandleReopen:sender hasVisibleWindows:flag
-        display alert "Reopen"
-        return true
-    end
     
     on applicationWillFinishLaunching:notification
         -- Insert code here to initialize your application before any files are opened 
     end
     
     on applicationDidFinishLaunching:notification
-        display alert "Launch"
+        -- Insert code here to initialize your application
     end
     
-    on applicationWillTerminate:sender
+    on applicationWillTerminate:notification
         -- Insert code here to tear down your application
     end
     
     on applicationShouldTerminate:sender
         -- Insert code here to do any housekeeping before your application quits 
         return current application's NSTerminateNow
+    end
+	
+    on applicationShouldTerminateAfterLastWindowClosed:sender
+        -- If the return value is true, the application is quit when user close the last window
+        return false
+    end
+    
+    on applicationShouldHandleReopen:sender hasVisibleWindows:flag
+        -- Insert code here to reopen your application
+        if flag then
+            return false
+        end
+        return true
     end
     
 end

@@ -23,8 +23,6 @@ script AppDelegate
     -- Delegate methods
     
     on applicationWillFinishLaunching:notification
-        tell theWindow to |center|()
-        activate
         current application's NSApp's runModalForWindow:theWindow
     end
     
@@ -32,7 +30,7 @@ script AppDelegate
         -- Insert code here to initialize your application
     end
     
-    on applicationWillTerminate:sender
+    on applicationWillTerminate:notification
         -- Insert code here to tear down your application
     end
     

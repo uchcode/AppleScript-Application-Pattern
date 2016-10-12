@@ -27,7 +27,7 @@ script AppDelegate
         -- Insert code here to initialize your application
     end
 	
-    on applicationWillTerminate:sender
+    on applicationWillTerminate:notification
         -- Insert code here to tear down your application
     end
     
@@ -36,4 +36,18 @@ script AppDelegate
 		return current application's NSTerminateNow
 	end
 	
+    on applicationShouldTerminateAfterLastWindowClosed:sender
+        -- If the return value is true, the application is quit when user close the last window
+        return false
+    end
+    
+    on applicationShouldHandleReopen:sender hasVisibleWindows:flag
+        -- Insert code here to reopen your application
+        if flag then
+            return false
+        end
+        tell theWindow to makeKeyAndOrderFront_(me)
+        return true
+    end
+    
 end

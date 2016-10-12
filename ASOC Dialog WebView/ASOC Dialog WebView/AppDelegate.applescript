@@ -39,14 +39,13 @@ script AppDelegate
         set f to current application's NSMakeRect(0, 64, w, h - 64)
         tell theWebView to setFrame_(f)
         
-        set u to NSURL's alloc's initWithString_(theAddress)
-        set r to NSURLRequest's alloc's initWithURL_(u)
+        set u to NSURL's URLWithString_(theAddress)
+        set r to NSURLRequest's requestWithURL_(u)
         tell theWebView to loadRequest_(r)
         
         tell the contentView of theWindow to addSubview_(theWebView)
         
-        tell theWindow to |center|()
-        activate
+        current application's NSApp's activateIgnoringOtherApps_(true)
         current application's NSApp's runModalForWindow:theWindow
     end
     
@@ -54,13 +53,26 @@ script AppDelegate
         -- Insert code here to initialize your application
     end
     
-    on applicationWillTerminate:sender
+    on applicationWillTerminate:notification
         -- Insert code here to tear down your application
     end
     
     on applicationShouldTerminate:sender
         -- Insert code here to do any housekeeping before your application quits 
         return current application's NSTerminateNow
+    end
+	
+    on applicationShouldTerminateAfterLastWindowClosed:sender
+        -- If the return value is true, the application is quit when user close the last window
+        return false
+    end
+    
+    on applicationShouldHandleReopen:sender hasVisibleWindows:flag
+        -- Insert code here to reopen your application
+        if flag then
+            return false
+        end
+        return true
     end
     
 end

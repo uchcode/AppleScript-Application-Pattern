@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11521.1" systemVersion="16B2338c" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11535.1" systemVersion="16B2548a" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11521.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11535.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -692,16 +693,16 @@
         </window>
         <menu id="al5-zl-O94">
             <items>
-                <menuItem title="OK" id="MNq-bG-gl5">
+                <menuItem title="Command 1" id="MNq-bG-gl5">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
-                        <action selector="ok:" target="Voe-Tx-rLC" id="9SX-I3-II8"/>
+                        <action selector="command1:" target="Voe-Tx-rLC" id="R86-LU-ngP"/>
                     </connections>
                 </menuItem>
-                <menuItem title="Cancel" id="qE9-8h-O7m">
+                <menuItem title="Command 2" id="qE9-8h-O7m">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
-                        <action selector="cancel:" target="Voe-Tx-rLC" id="btC-MP-wMb"/>
+                        <action selector="command2:" target="Voe-Tx-rLC" id="v5v-oW-BmB"/>
                     </connections>
                 </menuItem>
             </items>
