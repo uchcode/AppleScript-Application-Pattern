@@ -7,35 +7,35 @@
 --
 
 script AppDelegate
-	property parent : class "NSObject"
-	
-	-- IBOutlets
+    property parent : class "NSObject"
     
-	property theWindow : missing value
-	
+    -- IBOutlets
+    
+    property theWindow : missing value
+    
     -- IBActions
     
     
     
     -- Delegate methods
     
-	on applicationWillFinishLaunching:notification
-		-- Insert code here to initialize your application before any files are opened 
-	end
+    on applicationWillFinishLaunching:notification
+        -- Insert code here to initialize your application before any files are opened 
+    end
     
     on applicationDidFinishLaunching:notification
         -- Insert code here to initialize your application
     end
-	
+    
     on applicationWillTerminate:notification
         -- Insert code here to tear down your application
     end
     
-	on applicationShouldTerminate:sender
-		-- Insert code here to do any housekeeping before your application quits 
-		return current application's NSTerminateNow
-	end
-	
+    on applicationShouldTerminate:sender
+        -- Insert code here to do any housekeeping before your application quits 
+        return current application's NSTerminateNow
+    end
+    
     on applicationShouldTerminateAfterLastWindowClosed:sender
         -- If the return value is true, the application is quit when user close the last window
         return false

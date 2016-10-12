@@ -22,7 +22,7 @@ script AppDelegate
     -- Delegate methods
     
     on applicationWillFinishLaunching:notification
-		-- Insert code here to initialize your application before any files are opened 
+        -- Insert code here to initialize your application before any files are opened 
     end
     
     on applicationDidFinishLaunching:notification
@@ -38,7 +38,7 @@ script AppDelegate
         -- Insert code here to do any housekeeping before your application quits 
         return current application's NSTerminateNow
     end
-	
+    
     on applicationShouldTerminateAfterLastWindowClosed:sender
         -- If the return value is true, the application is quit when user close the last window
         return false

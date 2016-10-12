@@ -36,27 +36,51 @@ script AppDelegate
     
     property theStatusItem : missing value
     
-    -- Delegate methods
+    -- NSMenuDelegate methods
+    
+    on menuWillOpen:notification
+        -- Insert code here when status menu will open
+    end
+    
+    on menuDidClose:notification
+        -- Insert code here when status menu closed
+    end
+    
+    -- NSApplicationDelegate methods
     
     on applicationWillFinishLaunching:notification
-        set l to current application's NSVariableStatusItemLength
-        set theStatusItem to NSStatusBar's systemStatusBar's statusItemWithLength_(l)
-        tell theStatusItem to setMenu_(theStatusMenu)
-        tell theStatusItem to setTitle_("🐱")
-        tell theWindow to |center|()
+        -- Insert code here to initialize your application before any files are opened
     end
     
     on applicationDidFinishLaunching:notification
-        -- Insert code here to initialize your application
+        set l to current application's NSVariableStatusItemLength
+        set theStatusItem to NSStatusBar's systemStatusBar's statusItemWithLength_(l)
+        tell theStatusItem to setTitle_("🐱")
+        tell theStatusItem to setMenu_(theStatusMenu)
+        tell theStatusMenu to setDelegate_(me)
+        tell theWindow to |center|()
     end
     
-    on applicationWillTerminate:sender
+    on applicationWillTerminate:notification
         -- Insert code here to tear down your application
     end
     
     on applicationShouldTerminate:sender
         -- Insert code here to do any housekeeping before your application quits 
         return current application's NSTerminateNow
+    end
+	
+    on applicationShouldTerminateAfterLastWindowClosed:sender
+        -- If the return value is true, the application is quit when user close the last window
+        return false
+    end
+    
+    on applicationShouldHandleReopen:sender hasVisibleWindows:flag
+        -- Insert code here to reopen your application
+        if flag then
+            return false
+        end
+        return true
     end
     
 end

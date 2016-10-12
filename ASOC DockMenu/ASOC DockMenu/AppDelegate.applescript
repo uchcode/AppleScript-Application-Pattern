@@ -41,7 +41,7 @@ script AppDelegate
         -- Insert code here to do any housekeeping before your application quits 
         return current application's NSTerminateNow
     end
-	
+    
     on applicationShouldTerminateAfterLastWindowClosed:sender
         -- If the return value is true, the application is quit when user close the last window
         return false
